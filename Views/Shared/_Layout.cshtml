@@ -14,18 +14,20 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
+   
+    <div class="container">
+        <header>
             <nav class="blue darken-3">
                 <div class="nav-wrapper">
                     <a href="" class="brand-logo center" asp-controller="Albuns" asp-action="Index">Face Album</a>
                 </div>
             </nav>
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-    </header>
+        </header>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2019 - FaceAlbum - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -45,7 +47,7 @@
         </script>
         <script src="~/lib/materialize/js/materialize.js"></script>
     </environment>
-    
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
