@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<FaceAlbum.Models.Album>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Albuns";
 }
 
 <h1>Index</h1>
@@ -12,9 +12,6 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FotoTopo)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Inicio)
             </th>
@@ -27,9 +24,6 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FotoTopo)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Inicio)
             </td>
